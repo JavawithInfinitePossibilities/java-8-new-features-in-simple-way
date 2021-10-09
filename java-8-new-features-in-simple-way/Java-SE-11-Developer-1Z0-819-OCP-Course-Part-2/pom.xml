@@ -1,0 +1,17 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.sid.tutorials.Java8</groupId>
+		<artifactId>java-8-new-features-in-simple-way</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>Java-SE-11-Developer-1Z0-819-OCP-Course-Part-2</artifactId>
+	<packaging>pom</packaging>
+	<name>Java-SE-11-Developer-1Z0-819-OCP-Course-Part-2</name>
+	<description>Java-SE-11-Developer-1Z0-819-OCP-Course-Part-2</description>
+	<modules>
+		<module>Portion-02-Java-Fundamentals</module>
+	</modules>
+</project>
