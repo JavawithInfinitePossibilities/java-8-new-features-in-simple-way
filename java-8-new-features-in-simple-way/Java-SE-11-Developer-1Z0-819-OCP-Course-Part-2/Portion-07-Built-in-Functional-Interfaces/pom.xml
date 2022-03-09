@@ -1,0 +1,19 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.sid.tutorials.Java8</groupId>
+		<artifactId>Java-SE-11-Developer-1Z0-819-OCP-Course-Part-2</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>Portion-07-Built-in-Functional-Interfaces</artifactId>
+	<packaging>war</packaging>
+	<name>Portion-07-Built-in-Functional-Interfaces</name>
+	<description>Portion-07-Built-in-Functional-Interfaces</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<Project.name>Portion-07-Built-in-Functional-Interfaces</Project.name>
+	</properties>
+</project>
