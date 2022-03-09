@@ -1,0 +1,19 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.sid.tutorials.Java8</groupId>
+		<artifactId>learn-java-se-8-and-prepare-for-the-java-associate-exam</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>Section-06-Java-Conventions-and-Primitives</artifactId>
+	<packaging>war</packaging>
+	<name>Section-06-Java-Conventions-and-Primitives</name>
+	<description>Section-06-Java-Conventions-and-Primitives</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<Project.name>Section-06-Java-Conventions-and-Primitives</Project.name>
+	</properties>
+</project>
