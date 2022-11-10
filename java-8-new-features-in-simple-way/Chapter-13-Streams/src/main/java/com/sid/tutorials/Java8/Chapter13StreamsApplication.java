@@ -17,6 +17,12 @@ import com.sid.tutorials.Java8.data.PersonEmployee;
 /**
  * @author Lenovo For more reference :
  *         https://javaconceptoftheday.com/solving-real-time-queries-using-java-8-features-employee-management-system/
+ *         https://javaconceptoftheday.com/java-8-interview-questions-and-answers/
+ *         https://javaconceptoftheday.com/java-interview-questions-and-answers/
+ *         https://javaconceptoftheday.com/java-threads-interview-questions-and-answers/
+ *         https://javaconceptoftheday.com/java-8-optional-class/
+ *         https://javaconceptoftheday.com/java-8-merge-two-maps-with-same-keys/
+ *         https://javaconceptoftheday.com/java-8-stream-intermediate-and-terminal-operations/
  *
  */
 public class Chapter13StreamsApplication {
