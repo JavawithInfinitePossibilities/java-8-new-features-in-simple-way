@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 import com.sid.tutorials.Java8.data.DummyDataTable;
 import com.sid.tutorials.Java8.data.PersonEmployee;
@@ -208,6 +209,25 @@ public class Chapter13StreamsApplication {
 		PersonEmployee employee = employees.stream().max(Comparator.comparing(PersonEmployee::getAge)).get();
 		System.out.println("oldestEmployeeWrapper : " + employee);
 
+		/**
+		 * How we can iterate from 100 to 0 using IntStream.
+		 * 
+		 * <pre>
+		 * for (int i = 100; i >= 0; i -= 10) {
+		 * 	System.out.println(i);
+		 * }
+		 * OR
+		 * for (int i = 100; i >= 0; i = i- 10) {
+		 * 	System.out.println(i);
+		 * }
+		 * </pre>
+		 */
+
+		IntStream.iterate(100, i -> i >= 0, i -> i - 10).forEach(i -> System.out.println(i));
+
+		for (int j = 0; j < args.length; j = j + 10) {
+
+		}
 	}
 
 }
