@@ -224,10 +224,6 @@ public class Chapter13StreamsApplication {
 		 */
 
 		IntStream.iterate(100, i -> i >= 0, i -> i - 10).forEach(i -> System.out.println(i));
-
-		for (int j = 0; j < args.length; j = j + 10) {
-
-		}
 	}
 
 }
