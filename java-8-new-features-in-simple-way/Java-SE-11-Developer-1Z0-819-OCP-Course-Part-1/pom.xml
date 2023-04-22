@@ -15,5 +15,34 @@
 		<module>
   		Division-02-Understanding-Java-Technology-and-Environment
   		</module>
+		<module>
+  		Division-02-Understanding-Java-Technology-and-Environment-1
+  		</module>
+		<module>
+  		Division-03-Working-With-Java-Primitive-Data-Types-and-String-APIs
+  		</module>
+		<module>
+  		Division-04-Using-Operators-and-Decision-Constructs
+  		</module>
+		<module>
+  		Division-05-Working-with-Java-Arrays
+  		</module>
+		<module>
+  		Division-06-Describing-and-Using-Objects-and-Classes
+  		</module>
+		<module>
+  		Division-07-Creating-and-Using-Methods
+  		</module>
+		<module>
+  		Division-08-Applying-Encapsulation
+  		</module>
+		<module>
+  		Division-09-Reusing-Implementations-Through-Inheritance
+  		</module>
+		<module>
+  		Division-10-Programming-Abstractly-Through-Interfaces
+  		</module>
+		<module>Division-11-Handling-Exception</module>
+		<module>Division-12-Understanding-Modules</module>
 	</modules>
 </project>

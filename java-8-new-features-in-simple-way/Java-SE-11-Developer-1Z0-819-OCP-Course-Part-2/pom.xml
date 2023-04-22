@@ -13,5 +13,11 @@
 	<description>Java-SE-11-Developer-1Z0-819-OCP-Course-Part-2</description>
 	<modules>
 		<module>Portion-02-Java-Fundamentals</module>
+		<module>Portion-03-Exception-Handling-and-Assertions</module>
+		<module>Portion-04-Java-Interfaces</module>
+		<module>Portion-05-Generics-and-Collections</module>
+		<module>Portion-06-Functional-Interface-and-Lambda-Expressions</module>
+		<module>Portion-07-Built-in-Functional-Interfaces</module>
+		<module>Portion-08-Java-Stream-API</module>
 	</modules>
 </project>

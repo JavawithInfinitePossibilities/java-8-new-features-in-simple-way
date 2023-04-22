@@ -8,7 +8,6 @@
 	<packaging>pom</packaging>
 	<name>java-8-new-features-in-simple-way</name>
 	<description>java-8-new-features-in-simple-way</description>
-
 	<repositories>
 		<repository>
 			<id>maven2-repository.java.net</id>
@@ -26,11 +25,10 @@
 	</repositories>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>11</java.version>
-		<maven.compiler.source>11</maven.compiler.source>
-		<maven.compiler.target>11</maven.compiler.target>
+		<java.version>17</java.version>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
 	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
@@ -97,10 +95,10 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.0</version>
+				<version>3.8.1</version>
 				<configuration>
-					<source>${java.version}</source>
-					<target>${java.version}</target>
+					<!--<source>${java.version}</source>
+					<target>${java.version}</target>-->
 					<annotationProcessorPaths>
 						<path>
 							<groupId>org.projectlombok</groupId>
@@ -110,13 +108,17 @@
 					</annotationProcessorPaths>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.1</version>
+			</plugin>
 		</plugins>
 	</build>
-
 	<modules>
 		<module>
   		Chapter-02-Lambda-Expressions-Functional-Interfaces
-  	</module>
+  		</module>
 		<module>Chapter-03-Lambda-Expressions-with-Collections</module>
 		<module>
 			Chapter-04-Anonymous-Inner-Classes-Lambda-Expressions
@@ -137,11 +139,6 @@
 			Chapter-09-Predefined-Functional-Interfaces-Supplier
 		</module>
 		<module>
-			learn-java-se-8-and-prepare-for-the-java-associate-exam
-		</module>
-		<module>Java-SE-11-Developer-1Z0-819-OCP-Course-Part-1</module>
-		<module>Java-SE-11-Developer-1Z0-819-OCP-Course-Part-2</module>
-		<module>
 			Chapter-10-Two-Argument-Bi-Functional-Interfaces-BiPredicate-BiFunction-BiConsumer
 		</module>
 		<module>
@@ -152,5 +149,12 @@
 		</module>
 		<module>Chapter-13-Streams</module>
 		<module>Chapter-14-Date-and-Time-API</module>
+		<module>
+			learn-java-se-8-and-prepare-for-the-java-associate-exam
+		</module>
+		<module>Java-SE-11-Developer-1Z0-819-OCP-Course-Part-1</module>
+		<module>Java-SE-11-Developer-1Z0-819-OCP-Course-Part-2</module>
+		<module>MultiThreading-Parallel-Asynchronous-Coding-in-Modern-Java</module>
+		<module>Java-Exception-Handling</module>
 	</modules>
 </project>

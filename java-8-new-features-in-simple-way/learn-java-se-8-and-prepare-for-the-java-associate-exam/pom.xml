@@ -13,5 +13,11 @@
 	<description>learn-java-se-8-and-prepare-for-the-java-associate-exam</description>
 	<modules>
 		<module>Section-02-Getting-Started-with-Java</module>
+		<module>Section-03-Introduction-to-Objects</module>
+		<module>Section-04-Static-Scope-and-Garbage-Collection</module>
+		<module>Section-05-Packages</module>
+		<module>Section-06-Java-Conventions-and-Primitives</module>
+		<module>Section-07-Java-Syntax</module>
+		<module>Section-08-Strings</module>
 	</modules>
 </project>

@@ -21,9 +21,6 @@
 		<module>
 			Section-05-Getting-started-with-Parallel-Streams
 		</module>
-		<module>
-			Section-06-Build-Retail-Checkout-Application-using-Parallel-Streams
-		</module>
 		<module>Section-06-Build-Retail-Checkout-Application</module>
 		<module>Section-07-Parallel-Streams-Under-the-hood</module>
 		<module>
