@@ -22,7 +22,6 @@ class Section07ParallelStreamsUnderthehoodTest {
 	LinkedListSpliteratorExample linkedListSpliteratorExample = new LinkedListSpliteratorExample();
 	HashsetSpliteratorExample hashsetSpliteratorExample = new HashsetSpliteratorExample();
 
-	@Disabled
 	@RepeatedTest(5)
 	void multiplyEachValue() {
 		boolean isParallel = false;
@@ -35,7 +34,7 @@ class Section07ParallelStreamsUnderthehoodTest {
 		assertEquals(size, resultList.size());
 	}
 
-	
+	@Disabled
 	@RepeatedTest(5)
 	void multiplyEachValueLinkedlist() {
 		boolean isParallel = true;

@@ -21,4 +21,9 @@ public class DataSet {
 		CommonUtil.delay(500);
 		return name.length() + "-" + name;
 	}
+
+	public String string_toLowerCase(String name) {
+		CommonUtil.delay(500);
+		return name.toLowerCase();
+	}
 }

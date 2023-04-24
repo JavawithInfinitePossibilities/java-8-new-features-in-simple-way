@@ -16,9 +16,6 @@ import com.sid.tutorials.Java8.util.DataSet;
 
 class Section06BuildRetailCheckoutApplicationTest {
 
-	PriceValidatorService priceValidatorService = new PriceValidatorService();
-	CheckoutService checkoutService = new CheckoutService(priceValidatorService);
-
 	@Disabled
 	@Test
 	void no_Of_cores() {
@@ -30,31 +27,24 @@ class Section06BuildRetailCheckoutApplicationTest {
 		// then
 	}
 
-	/*@ParameterizedTest
-	@ValueSource(ints = { 4, 6, 12 })*/
-	@Test
-	void checkoutitems(/*int noOfCartItem*/) {
-		int noOfCartItem=6;
-		boolean isParallel = false;
-		int counter = 1;
-		do {
-			System.out.println("No of cart :" + noOfCartItem + " isParallel:" + isParallel);
-			Cart cart = DataSet.createCart(noOfCartItem);
-			// when
-			CheckoutResponse checkoutResponse = checkoutService.checkout(cart, isParallel);
-			// then
-			if (noOfCartItem == 6 || noOfCartItem == 4) {
-				assertEquals(CheckoutStatus.SUCCESS, checkoutResponse.getCheckoutStatus());
-			} else if (noOfCartItem == 12) {
-				assertEquals(CheckoutStatus.FAILURE, checkoutResponse.getCheckoutStatus());
-			}
-			if (counter == 1) {
-				isParallel = true;
-			} else {
-				isParallel = false;
-			}
-			counter++;
-		} while (isParallel);
+	@ParameterizedTest
+	@ValueSource(ints = { 4, 6, 8, 12, 16, 20 })
+	void checkoutitems(int noOfCartItem) {
+		System.out.println("no of cores :" + Runtime.getRuntime().availableProcessors());
+		PriceValidatorService priceValidatorService = new PriceValidatorService();
+		CheckoutService checkoutService = CheckoutService.builder().priceValidatorService(priceValidatorService)
+				.build();
+		boolean isParallel = true;
+		System.out.println("No of cart :" + noOfCartItem + " isParallel:" + isParallel);
+		Cart cart = DataSet.createCart(noOfCartItem);
+		// when
+		CheckoutResponse checkoutResponse = checkoutService.checkout(cart, isParallel);
+		// then
+		if (noOfCartItem == 6 || noOfCartItem == 4) {
+			assertEquals(CheckoutStatus.SUCCESS, checkoutResponse.getCheckoutStatus());
+		} else if (noOfCartItem == 12) {
+			assertEquals(CheckoutStatus.FAILURE, checkoutResponse.getCheckoutStatus());
+		}
 	}
 
 }

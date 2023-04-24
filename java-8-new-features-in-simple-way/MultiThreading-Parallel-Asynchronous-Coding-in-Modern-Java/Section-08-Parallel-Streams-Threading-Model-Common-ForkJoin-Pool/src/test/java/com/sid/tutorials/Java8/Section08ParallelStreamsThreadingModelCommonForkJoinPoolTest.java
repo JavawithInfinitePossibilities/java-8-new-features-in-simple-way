@@ -18,7 +18,6 @@ import com.sid.tutorials.Java8.services.PriceValidatorService;
 import com.sid.tutorials.Java8.util.DataSet;
 
 class Section08ParallelStreamsThreadingModelCommonForkJoinPoolTest {
-
 	PriceValidatorService priceValidatorService = new PriceValidatorService();
 	CheckoutService checkoutService = new CheckoutService(priceValidatorService);
 
@@ -44,42 +43,33 @@ class Section08ParallelStreamsThreadingModelCommonForkJoinPoolTest {
 		// then
 	}
 
-	@Test
-	void modify_parallelism() {
+	@ParameterizedTest
+	@ValueSource(ints = { 32 })
+	void modify_parallelism(int noOfCartItem) {
 		boolean isParallel = true;
 		// given
-		System.setProperty("java.util.concurrent.ForkJoinPool.common.parallelism", "100");
-		Cart cart = DataSet.createCart(100);
+		System.setProperty("java.util.concurrent.ForkJoinPool.common.parallelism", Integer.toString(noOfCartItem));
+		Cart cart = DataSet.createCart(noOfCartItem);
 		// when
 		CheckoutResponse checkoutResponse = checkoutService.checkout(cart, isParallel);
 		// then
 		assertEquals(CheckoutStatus.FAILURE, checkoutResponse.getCheckoutStatus());
 	}
 
-	@Disabled
 	@ParameterizedTest
 	@ValueSource(ints = { 12 })
 	void checkoutitems(int noOfCartItem) {
 		boolean isParallel = false;
-		int counter = 1;
-		do {
-			System.out.println("No of cart :" + noOfCartItem + " isParallel:" + isParallel);
-			Cart cart = DataSet.createCart(noOfCartItem);
-			// when
-			CheckoutResponse checkoutResponse = checkoutService.checkout(cart, isParallel);
-			// then
-			if (noOfCartItem == 6 || noOfCartItem == 4) {
-				assertEquals(CheckoutStatus.SUCCESS, checkoutResponse.getCheckoutStatus());
-			} else if (noOfCartItem == 12) {
-				assertEquals(CheckoutStatus.FAILURE, checkoutResponse.getCheckoutStatus());
-			}
-			if (counter == 1) {
-				isParallel = true;
-			} else {
-				isParallel = false;
-			}
-			counter++;
-		} while (isParallel);
+		System.out.println("No of cart :" + noOfCartItem + " isParallel:" + isParallel);
+		Cart cart = DataSet.createCart(noOfCartItem);
+		// when
+		CheckoutResponse checkoutResponse = checkoutService.checkout(cart, isParallel);
+		// then
+		if (noOfCartItem == 6 || noOfCartItem == 4) {
+			assertEquals(CheckoutStatus.SUCCESS, checkoutResponse.getCheckoutStatus());
+		} else if (noOfCartItem == 12) {
+			assertEquals(CheckoutStatus.FAILURE, checkoutResponse.getCheckoutStatus());
+		}
 	}
 
 }

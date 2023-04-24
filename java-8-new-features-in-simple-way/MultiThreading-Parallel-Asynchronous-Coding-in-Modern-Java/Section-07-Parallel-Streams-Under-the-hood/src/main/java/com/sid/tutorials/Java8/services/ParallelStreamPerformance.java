@@ -30,7 +30,7 @@ public class ParallelStreamPerformance {
 	}
 
 	public int sum_using_iterate(int n, boolean isParallel) {
-		startTime();
+		startTime(true);
 		Stream<Integer> integerStream = Stream.iterate(0, i -> i + 1);
 		if (isParallel)
 			integerStream.parallel();

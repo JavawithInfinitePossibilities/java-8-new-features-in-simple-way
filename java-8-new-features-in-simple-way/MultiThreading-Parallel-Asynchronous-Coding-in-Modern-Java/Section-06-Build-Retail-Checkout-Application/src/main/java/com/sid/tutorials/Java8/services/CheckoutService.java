@@ -1,6 +1,7 @@
 package com.sid.tutorials.Java8.services;
 
-import static com.sid.tutorials.Java8.util.CommonUtil.*;
+import static com.sid.tutorials.Java8.util.CommonUtil.startTime;
+import static com.sid.tutorials.Java8.util.CommonUtil.timeTaken;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -11,10 +12,13 @@ import com.sid.tutorials.Java8.domain.CartItem;
 import com.sid.tutorials.Java8.domain.CheckoutResponse;
 import com.sid.tutorials.Java8.domain.CheckoutStatus;
 
+import lombok.Builder;
+
 public class CheckoutService {
 
 	private PriceValidatorService priceValidatorService;
 
+	@Builder
 	public CheckoutService(PriceValidatorService priceValidatorService) {
 		this.priceValidatorService = priceValidatorService;
 	}

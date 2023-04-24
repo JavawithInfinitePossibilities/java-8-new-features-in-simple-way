@@ -40,25 +40,17 @@ public class CartcheckoutTest {
 	@ValueSource(ints = { 4 })
 	void checkoutitems(int noOfCartItem) {
 		boolean isParallel = false;
-		int counter = 1;
-		do {
-			System.out.println("No of cart :" + noOfCartItem + " isParallel:" + isParallel);
-			Cart cart = DataSet.createCart(noOfCartItem);
-			// when
-			CheckoutResponse checkoutResponse = checkoutService.checkout(cart, isParallel);
-			// then
-			if (noOfCartItem == 6 || noOfCartItem == 4) {
-				assertEquals(CheckoutStatus.SUCCESS, checkoutResponse.getCheckoutStatus());
-			} else if (noOfCartItem == 12) {
-				assertEquals(CheckoutStatus.FAILURE, checkoutResponse.getCheckoutStatus());
-			}
-			if (counter == 1) {
-				isParallel = true;
-			} else {
-				isParallel = false;
-			}
-			counter++;
-		} while (isParallel);
+		System.out.println("No of cart :" + noOfCartItem + " isParallel:" + isParallel);
+		Cart cart = DataSet.createCart(noOfCartItem);
+		// when
+		CheckoutResponse checkoutResponse = checkoutService.checkout(cart, isParallel);
+		// then
+		if (noOfCartItem == 6 || noOfCartItem == 4) {
+			assertEquals(CheckoutStatus.SUCCESS, checkoutResponse.getCheckoutStatus());
+		} else if (noOfCartItem == 12) {
+			assertEquals(CheckoutStatus.FAILURE, checkoutResponse.getCheckoutStatus());
+		}
+
 	}
 
 }
