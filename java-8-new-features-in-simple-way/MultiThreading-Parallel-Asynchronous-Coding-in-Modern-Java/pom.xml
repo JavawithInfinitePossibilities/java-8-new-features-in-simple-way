@@ -27,5 +27,16 @@
 			Section-08-Parallel-Streams-Threading-Model-Common-ForkJoin-Pool
 		</module>
 		<module>Section-09-Parallel-Streams-Summary</module>
+		<module>Section-11-CompletableFuture</module>
+		<module>Section-12-Exploring-CompletableFuture-Function</module>
+		<module>
+			Section-13-Build-ProductService-Application-using-CompletableFuture
+		</module>
+		<module>
+			Section-14-Combining-Streams-and-CompletableFuture
+		</module>
+		<module>
+			Section-15-Exception-Handling-Recovery-in-CompletableFuture
+		</module>
 	</modules>
 </project>
