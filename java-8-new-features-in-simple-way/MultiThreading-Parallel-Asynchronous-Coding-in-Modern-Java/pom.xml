@@ -38,5 +38,18 @@
 		<module>
 			Section-15-Exception-Handling-Recovery-in-CompletableFuture
 		</module>
+		<module>
+			Section-16-Implement-Exception-HandlingRecovery-in-ProductService
+		</module>
+		<module>Section-17-CompletableFuture-Threadpool</module>
+		<module>
+			Section-18-Threads-and-Async-Overloaded-Methods-in-CompletableFuture
+		</module>
+		<module>
+			Section-19-Build-RestClient-API-Client-using-Spring-Web-Client-And-CompletableFuture
+		</module>
+		<module>
+			Section-20-Handle-Multiple-CompletableFuture-AnyOf-AllOf
+		</module>
 	</modules>
 </project>
