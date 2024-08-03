@@ -6,7 +6,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>Section-11-CompletableFuture</artifactId>
-	<packaging>war</packaging>
+	<packaging>jar </packaging>
 	<name>Section-11-CompletableFuture</name>
 	<description>Section-11-CompletableFuture</description>
 	<properties>

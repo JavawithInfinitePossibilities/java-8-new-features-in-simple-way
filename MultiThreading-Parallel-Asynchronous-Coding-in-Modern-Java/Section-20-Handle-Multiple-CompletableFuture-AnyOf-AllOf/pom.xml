@@ -6,7 +6,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>Section-20-Handle-Multiple-CompletableFuture-AnyOf-AllOf</artifactId>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>Section-20-Handle-Multiple-CompletableFuture-AnyOf-AllOf</name>
 	<description>Section-20-Handle-Multiple-CompletableFuture-AnyOf-AllOf</description>
 	<properties>
