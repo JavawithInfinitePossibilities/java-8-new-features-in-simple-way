@@ -6,7 +6,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>Section-17-CompletableFuture-Threadpool</artifactId>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>Section-17-CompletableFuture-Threadpool</name>
 	<description>Section-17-CompletableFuture-Threadpool</description>
 	<properties>

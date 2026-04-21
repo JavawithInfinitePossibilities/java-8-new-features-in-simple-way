@@ -6,7 +6,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>Section-12-Exploring-CompletableFuture-Function</artifactId>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>Section-12-Exploring-CompletableFuture-Function</name>
 	<description>Section-12-Exploring-CompletableFuture-Function</description>
 	<properties>

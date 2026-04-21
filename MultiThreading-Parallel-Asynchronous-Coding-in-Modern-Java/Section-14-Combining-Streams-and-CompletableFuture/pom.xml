@@ -6,7 +6,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>Section-14-Combining-Streams-and-CompletableFuture</artifactId>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>Section-14-Combining-Streams-and-CompletableFuture</name>
 	<description>Section-14-Combining-Streams-and-CompletableFuture</description>
 	<properties>

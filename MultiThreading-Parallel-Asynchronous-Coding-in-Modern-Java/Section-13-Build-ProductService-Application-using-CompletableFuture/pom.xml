@@ -6,7 +6,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>Section-13-Build-ProductService-Application-using-CompletableFuture</artifactId>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>Section-13-Build-ProductService-Application-using-CompletableFuture</name>
 	<description>Section-13-Build-ProductService-Application-using-CompletableFuture</description>
 	<properties>

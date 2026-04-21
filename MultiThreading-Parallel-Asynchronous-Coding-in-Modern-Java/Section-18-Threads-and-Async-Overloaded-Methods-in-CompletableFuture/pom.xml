@@ -6,7 +6,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>Section-18-Threads-and-Async-Overloaded-Methods-in-CompletableFuture</artifactId>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>Section-18-Threads-and-Async-Overloaded-Methods-in-CompletableFuture</name>
 	<description>Section-18-Threads-and-Async-Overloaded-Methods-in-CompletableFuture</description>
 	<properties>

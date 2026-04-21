@@ -6,7 +6,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>Section-19-Build-RestClient-API-Client-using-Spring-Web-Client-And-CompletableFuture</artifactId>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>Section-19-Build-RestClient-API-Client-using-Spring-Web-Client-And-CompletableFuture</name>
 	<description>Section-19-Build-RestClient-API-Client-using-Spring-Web-Client-And-CompletableFuture</description>
 	<properties>
